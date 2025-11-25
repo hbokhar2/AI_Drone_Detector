@@ -1,0 +1,3 @@
+/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles/DroneDetection.dir
+/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles/edit_cache.dir
+/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build",
+  "command": "/usr/bin/c++  -I/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/include/opencv4  -o CMakeFiles/DroneDetection.dir/Main.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/Main.cpp",
+  "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/Main.cpp",
+  "output": "CMakeFiles/DroneDetection.dir/Main.cpp.o"
+},
+{
+  "directory": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build",
+  "command": "/usr/bin/c++  -I/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/include/opencv4  -o CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraConsumer/CameraConsumer.cpp",
+  "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraConsumer/CameraConsumer.cpp",
+  "output": "CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o"
+},
+{
+  "directory": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build",
+  "command": "/usr/bin/c++  -I/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/include/opencv4  -o CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraProducer/CameraProducer.cpp",
+  "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraProducer/CameraProducer.cpp",
+  "output": "CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o"
+},
+{
+  "directory": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build",
+  "command": "/usr/bin/c++  -I/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/include/opencv4  -o CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/RingBufferQueue/RingBufferQueue.cpp",
+  "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/RingBufferQueue/RingBufferQueue.cpp",
+  "output": "CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o"
+}
+]
