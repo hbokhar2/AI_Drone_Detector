@@ -225,6 +225,30 @@ RingBufferQueue/RingBufferQueue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.s
 .PHONY : RingBufferQueue/RingBufferQueue.cpp.s
 
+YoloProcessor/YoloProcessor.o: YoloProcessor/YoloProcessor.cpp.o
+.PHONY : YoloProcessor/YoloProcessor.o
+
+# target to build an object file
+YoloProcessor/YoloProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o
+.PHONY : YoloProcessor/YoloProcessor.cpp.o
+
+YoloProcessor/YoloProcessor.i: YoloProcessor/YoloProcessor.cpp.i
+.PHONY : YoloProcessor/YoloProcessor.i
+
+# target to preprocess a source file
+YoloProcessor/YoloProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.i
+.PHONY : YoloProcessor/YoloProcessor.cpp.i
+
+YoloProcessor/YoloProcessor.s: YoloProcessor/YoloProcessor.cpp.s
+.PHONY : YoloProcessor/YoloProcessor.s
+
+# target to generate assembly for a file
+YoloProcessor/YoloProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.s
+.PHONY : YoloProcessor/YoloProcessor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,6 +270,9 @@ help:
 	@echo "... RingBufferQueue/RingBufferQueue.o"
 	@echo "... RingBufferQueue/RingBufferQueue.i"
 	@echo "... RingBufferQueue/RingBufferQueue.s"
+	@echo "... YoloProcessor/YoloProcessor.o"
+	@echo "... YoloProcessor/YoloProcessor.i"
+	@echo "... YoloProcessor/YoloProcessor.s"
 .PHONY : help
 
 

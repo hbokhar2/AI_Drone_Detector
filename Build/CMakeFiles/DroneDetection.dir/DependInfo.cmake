@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraProducer/CameraProducer.cpp" "CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o" "gcc" "CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o.d"
   "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/Main.cpp" "CMakeFiles/DroneDetection.dir/Main.cpp.o" "gcc" "CMakeFiles/DroneDetection.dir/Main.cpp.o.d"
   "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/RingBufferQueue/RingBufferQueue.cpp" "CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o" "gcc" "CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o.d"
+  "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/YoloProcessor/YoloProcessor.cpp" "CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o" "gcc" "CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o.d"
   "" "DroneDetection" "gcc" "CMakeFiles/DroneDetection.dir/link.d"
   )
 

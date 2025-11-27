@@ -6,6 +6,7 @@ DroneDetection: \
   CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o \
   CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o \
   CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o \
+  CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o \
   /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/lib/libopencv_calib3d.so \
   /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/lib/libopencv_core.so \
   /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/lib/libopencv_dnn.so \
@@ -339,6 +340,8 @@ CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o:
 CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o:
 
 CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o:
+
+CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o:
 
 /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/lib/libopencv_calib3d.so:
 

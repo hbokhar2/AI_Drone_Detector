@@ -22,5 +22,11 @@
   "command": "/usr/bin/c++  -I/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/include/opencv4  -o CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/RingBufferQueue/RingBufferQueue.cpp",
   "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/RingBufferQueue/RingBufferQueue.cpp",
   "output": "CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o"
+},
+{
+  "directory": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build",
+  "command": "/usr/bin/c++  -I/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/include/opencv4  -o CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/YoloProcessor/YoloProcessor.cpp",
+  "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/YoloProcessor/YoloProcessor.cpp",
+  "output": "CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o"
 }
 ]

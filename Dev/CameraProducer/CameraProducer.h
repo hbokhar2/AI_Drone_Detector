@@ -14,7 +14,8 @@ class CameraProducer{
 	private:
 
 		//std::string m_pipeline = "v4l2src device=/dev/video0 ! image/jpeg, width=1600, height=600, framerate=60/1 ! jpegdec ! videoconvert ! appsink";
-		std::string m_pipeline = "v4l2src device=/dev/video0 ! image/jpeg, width=640, height=240, framerate=60/1 ! jpegdec ! videoconvert ! appsink";
+		//std::string m_pipeline = "v4l2src device=/dev/video0 ! image/jpeg, width=640, height=240, framerate=60/1 ! jpegdec ! videoconvert ! appsink";
+		std::string m_pipeline = "v4l2src device=/dev/video0 ! video/x-raw, format=YUY2, width=640, height=480, framerate=30/1 ! videoconvert ! appsink";
 		cv::VideoCapture m_videoCap;
 		cv::Mat m_rawFrames;
 };

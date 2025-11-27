@@ -8,6 +8,7 @@
 
 #include "CameraProducer/CameraProducer.h"
 #include "RingBufferQueue/RingBufferQueue.h"
+#include "YoloProcessor/YoloProcessor.h"
 
 void camera_producer_thread(CameraProducer& producer, RingBufferQueue& cam_to_ai_raw){
 	producer.initialize();
@@ -37,14 +38,34 @@ void annotated_display_thread(RingBufferQueue& ai_to_display_annotated){
 }
 
 void ai_processor_thread(RingBufferQueue& cam_to_ai_raw, RingBufferQueue& ai_to_display_annotated){
+
+	std::unique_ptr<YoloProcessor> processor = nullptr;
+
+	try {
+		std::cout << "Attempting to initialize AI Processor..." << std::endl;
+		processor = std::make_unique<YoloProcessor>(
+				"", 
+				#ifdef __linux__
+				"/home/B0LD/Documents/Projects/Capstone/DroneDetection/AiTrainer/TrainedAiFiles/drone_run/weights/best.onnx", 
+				"/home/B0LD/Documents/Projects/Capstone/DroneDetection/drone_dataset/"
+				#elif defined(_WIN32) || defined(_WIN64)
+				//Most people will compile for windows (likely) so add windows paths accordingly.
+				#endif
+				);
+		std::cout << "AI Processor successfully initialized YOLO model." << std::endl;
+
+	} catch (const std::exception& e) {
+		std::cerr << "AI PROCESSOR FAILED TO INITIALIZE: " << e.what() << std::endl;
+		return; 
+	}
+
 	cv::Mat rawFrame;
 
 	while(true){
 		if (cam_to_ai_raw.pop(rawFrame)) {
 			if (rawFrame.empty()) continue; 
 
-			cv::Mat annotatedFrame = rawFrame.clone(); 
-			//Put Yolo processing code here.
+			cv::Mat annotatedFrame = processor->process_frame(rawFrame); 
 
 			ai_to_display_annotated.push(annotatedFrame);
 
