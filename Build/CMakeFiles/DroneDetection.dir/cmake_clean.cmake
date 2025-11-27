@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DroneDetection.dir/Main.cpp.o.d"
   "CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o"
   "CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o.d"
+  "CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o"
+  "CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o.d"
   "DroneDetection"
   "DroneDetection.pdb"
 )

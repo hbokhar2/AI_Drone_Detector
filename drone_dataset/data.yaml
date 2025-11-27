@@ -1,0 +1,8 @@
+﻿path: /home/B0LD/Documents/Projects/Capstone/DroneDetection/drone_dataset
+
+train: train/
+val: valid/
+
+nc: 1
+
+names: ['drone']

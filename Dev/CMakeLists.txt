@@ -12,6 +12,7 @@ add_executable(${PROJECT_NAME}
 	CameraConsumer/CameraConsumer.cpp
 	CameraProducer/CameraProducer.cpp
 	RingBufferQueue/RingBufferQueue.cpp
+	YoloProcessor/YoloProcessor.cpp
 )
 
 set(OPENCV_INCLUDE
