@@ -10,7 +10,7 @@ CameraProducer::~CameraProducer(){
 
 void CameraProducer::initialize(){
 	#ifdef __linux__
-		//m_videoCap = cv::VideoCapture{m_pipeline, cv::CAP_GSTREAMER};
+		m_videoCap = cv::VideoCapture{m_pipeline, cv::CAP_GSTREAMER};
 	#elif defined(_WIN32) || defined(_WIN64)
 		m_videoCap = cv::VideoCapture(0);
 	#endif		

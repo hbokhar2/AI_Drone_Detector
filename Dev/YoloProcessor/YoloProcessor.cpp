@@ -70,83 +70,65 @@ cv::Mat YoloProcessor::process_frame(const cv::Mat& inputFrame){
 }
 
 void YoloProcessor::post_process(cv::Mat& frame, const std::vector<cv::Mat>& outputs) {
-    std::vector<int> class_ids;
-    std::vector<float> confidences;
-    std::vector<cv::Rect> boxes;
-    
-    cv::Mat output = outputs[0];
+	std::vector<int> class_ids;
+	std::vector<float> confidences;
+	std::vector<cv::Rect> boxes;
 
-    // --- FIX 1: Reshape 3D to 2D and Transpose ---
-    
-    // The output tensor from YOLOv8 ONNX is typically (1, Dimensions, Rows).
-    // Dimensions is the column count (e.g., 5 for 1 class: cx, cy, w, h, score).
-    // Rows is the prediction count (e.g., 8400).
-    int prediction_dimensions = output.size[1]; 
-    
-    // Reshape from (1, Dimensions, Rows) to (Dimensions, Rows)
-    output = output.reshape(0, prediction_dimensions); 
-    
-    // Transpose from (Dimensions, Rows) to (Rows, Dimensions)
-    // This makes each row a single detection: [cx, cy, w, h, score]
-    cv::transpose(output, output); 
-    // ---------------------------------------------
-    
-    // Use clear variable names for the post-transpose matrix
-    int num_predictions = output.rows;
-    int num_data_points = output.cols; // Should be 5
-    
-    float* data = (float*)output.data;
+	cv::Mat output = outputs[0];
 
-    // --- FIX 2: Iteration Loop ---
-    
-    for (int i = 0; i < num_predictions; ++i) {
-        // Score is the 5th element (index 4)
-        float confidence = data[4]; 
-        
-        if (confidence >= CONFIDENCE_THRESHOLD) {
-            
-            // Box Coordinates (YOLO format: center_x, center_y, width, height)
-            float cx = data[0];
-            float cy = data[1];
-            float w = data[2];
-            float h = data[3];
+	int prediction_dimensions = output.size[1]; 
 
-            // Rescale coordinates back to the original frame size
-            const float YOLO_INPUT_SIZE = 416.0f; // Ensure this matches your blobFromImage call
-            float scale_w = (float)frame.cols / YOLO_INPUT_SIZE;
-            float scale_h = (float)frame.rows / YOLO_INPUT_SIZE;
+	output = output.reshape(0, prediction_dimensions); 
 
-            int left = (int)((cx - 0.5 * w) * scale_w);
-            int top = (int)((cy - 0.5 * h) * scale_h);
-            int width = (int)(w * scale_w);
-            int height = (int)(h * scale_h);
+	cv::transpose(output, output); 
 
-            // Store the detection
-            class_ids.push_back(0); // Only one class, so ID is always 0
-            confidences.push_back(confidence);
-            boxes.push_back(cv::Rect(left, top, width, height));
-        }
+	int num_predictions = output.rows;
+	int num_data_points = output.cols;
 
-        // Move the pointer to the next prediction row
-        data += num_data_points; 
-    }
-    
-    // --- Non-Maximum Suppression (NMS) and Drawing ---
-    
-    std::vector<int> indices;
-    cv::dnn::NMSBoxes(boxes, confidences, CONFIDENCE_THRESHOLD, NMS_THRESHOLD, indices);
+	float* data = (float*)output.data;
 
-    for (int idx : indices) {
-        cv::Rect box = boxes[idx];
 
-        cv::rectangle(frame, box, cv::Scalar(0, 255, 0), 2);
+	for (int i = 0; i < num_predictions; ++i) {
+		float confidence = data[4]; 
 
-        int classId = class_ids[idx];
-        // Use a fallback if class names failed to load (due to "Loaded 0 class names")
-        std::string label = (m_classNames.empty() || classId >= m_classNames.size()) ? "Drone" : m_classNames[classId]; 
-        label += cv::format(" (%.2f)", confidences[idx]);
+		if (confidence >= CONFIDENCE_THRESHOLD) {
 
-        cv::putText(frame, label, cv::Point(box.x, box.y - 10), 
-            cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 255, 0), 2);
-    }
+			float cx = data[0];
+			float cy = data[1];
+			float w = data[2];
+			float h = data[3];
+
+			const float YOLO_INPUT_SIZE = 416.0f;
+			float scale_w = (float)frame.cols / YOLO_INPUT_SIZE;
+			float scale_h = (float)frame.rows / YOLO_INPUT_SIZE;
+
+			int left = (int)((cx - 0.5 * w) * scale_w);
+			int top = (int)((cy - 0.5 * h) * scale_h);
+			int width = (int)(w * scale_w);
+			int height = (int)(h * scale_h);
+
+			class_ids.push_back(0);
+			confidences.push_back(confidence);
+			boxes.push_back(cv::Rect(left, top, width, height));
+		}
+
+		data += num_data_points; 
+	}
+
+
+	std::vector<int> indices;
+	cv::dnn::NMSBoxes(boxes, confidences, CONFIDENCE_THRESHOLD, NMS_THRESHOLD, indices);
+
+	for (int idx : indices) {
+		cv::Rect box = boxes[idx];
+
+		cv::rectangle(frame, box, cv::Scalar(0, 255, 0), 2);
+
+		int classId = class_ids[idx];
+		std::string label = (m_classNames.empty() || classId >= m_classNames.size()) ? "Drone" : m_classNames[classId]; 
+		label += cv::format(" (%.2f)", confidences[idx]);
+
+		cv::putText(frame, label, cv::Point(box.x, box.y - 10), 
+				cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(0, 255, 0), 2);
+	}
 }
