@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++  @CMakeFiles/DroneDetection.dir/includes_CXX.rsp  -o CMakeFiles/DroneDetection.dir/Main.cpp.obj -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/Main.cpp",
+  "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/Main.cpp",
+  "output": "CMakeFiles/DroneDetection.dir/Main.cpp.obj"
+},
+{
+  "directory": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++  @CMakeFiles/DroneDetection.dir/includes_CXX.rsp  -o CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.obj -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraProducer/CameraProducer.cpp",
+  "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraProducer/CameraProducer.cpp",
+  "output": "CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.obj"
+},
+{
+  "directory": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++  @CMakeFiles/DroneDetection.dir/includes_CXX.rsp  -o CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.obj -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/RingBufferQueue/RingBufferQueue.cpp",
+  "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/RingBufferQueue/RingBufferQueue.cpp",
+  "output": "CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.obj"
+},
+{
+  "directory": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev",
+  "command": "/usr/bin/x86_64-w64-mingw32-g++  @CMakeFiles/DroneDetection.dir/includes_CXX.rsp  -o CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.obj -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/YoloProcessor/YoloProcessor.cpp",
+  "file": "/home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/YoloProcessor/YoloProcessor.cpp",
+  "output": "CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.obj"
+}
+]

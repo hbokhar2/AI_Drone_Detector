@@ -3,7 +3,6 @@ DroneDetection: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o \
   CMakeFiles/DroneDetection.dir/Main.cpp.o \
-  CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o \
   CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o \
   CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o \
   CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o \
@@ -334,8 +333,6 @@ DroneDetection: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
 
 CMakeFiles/DroneDetection.dir/Main.cpp.o:
-
-CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o:
 
 CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o:
 

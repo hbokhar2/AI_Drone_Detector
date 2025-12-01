@@ -85,12 +85,12 @@ clean: CMakeFiles/DroneDetection.dir/clean
 CMakeFiles/DroneDetection.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target DroneDetection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=1,2,3,4,5 "Built target DroneDetection"
 .PHONY : CMakeFiles/DroneDetection.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DroneDetection.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DroneDetection.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles 0
 .PHONY : CMakeFiles/DroneDetection.dir/rule
@@ -102,7 +102,7 @@ DroneDetection: CMakeFiles/DroneDetection.dir/rule
 # codegen rule for target.
 CMakeFiles/DroneDetection.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target DroneDetection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target DroneDetection"
 .PHONY : CMakeFiles/DroneDetection.dir/codegen
 
 # clean rule for target.

@@ -45,12 +45,13 @@ void ai_processor_thread(RingBufferQueue& cam_to_ai_raw, RingBufferQueue& ai_to_
 		std::cout << "Attempting to initialize AI Processor..." << std::endl;
 		processor = std::make_unique<YoloProcessor>(
 				"", 
-				#ifdef __linux__
+#ifdef __linux__
 				"/home/B0LD/Documents/Projects/Capstone/DroneDetection/AiTrainer/TrainedAiFiles/drone_run/weights/best.onnx", 
 				"/home/B0LD/Documents/Projects/Capstone/DroneDetection/drone_dataset/drone.names"
-				#elif defined(_WIN32) || defined(_WIN64)
-				//Most people will compile for windows (likely) so add windows paths accordingly.
-				#endif
+#elif defined(_WIN32) || defined(_WIN64)
+				"C:\\Users\\<name>\\Documents\\Projects\\Capstone\\DroneDetection\\AiTrainer\\TrainedAiFiles\\drone_run\\weights\\best.onnx",
+				"C:\\Users\\<name>\\Documents\\Projects\\Capstone\\DroneDetection\\drone_dataset\\drone.names"
+#endif
 				);
 		std::cout << "AI Processor successfully initialized YOLO model." << std::endl;
 

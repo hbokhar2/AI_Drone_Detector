@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DroneDetection.dir/link.d"
-  "CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o"
-  "CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o.d"
   "CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o"
   "CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o.d"
   "CMakeFiles/DroneDetection.dir/Main.cpp.o"

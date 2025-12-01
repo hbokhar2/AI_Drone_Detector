@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/B0LD/Documents/Projects/Capstone/DroneDetection/Build
+CMAKE_BINARY_DIR = /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles /home/B0LD/Documents/Projects/Capstone/DroneDetection/Build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CMakeFiles /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -129,13 +129,13 @@ DroneDetection/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/build
 .PHONY : DroneDetection/fast
 
-CameraProducer/CameraProducer.o: CameraProducer/CameraProducer.cpp.o
-.PHONY : CameraProducer/CameraProducer.o
+CameraProducer/CameraProducer.obj: CameraProducer/CameraProducer.cpp.obj
+.PHONY : CameraProducer/CameraProducer.obj
 
 # target to build an object file
-CameraProducer/CameraProducer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o
-.PHONY : CameraProducer/CameraProducer.cpp.o
+CameraProducer/CameraProducer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.obj
+.PHONY : CameraProducer/CameraProducer.cpp.obj
 
 CameraProducer/CameraProducer.i: CameraProducer/CameraProducer.cpp.i
 .PHONY : CameraProducer/CameraProducer.i
@@ -153,13 +153,13 @@ CameraProducer/CameraProducer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.s
 .PHONY : CameraProducer/CameraProducer.cpp.s
 
-Main.o: Main.cpp.o
-.PHONY : Main.o
+Main.obj: Main.cpp.obj
+.PHONY : Main.obj
 
 # target to build an object file
-Main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/Main.cpp.o
-.PHONY : Main.cpp.o
+Main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/Main.cpp.obj
+.PHONY : Main.cpp.obj
 
 Main.i: Main.cpp.i
 .PHONY : Main.i
@@ -177,13 +177,13 @@ Main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
-RingBufferQueue/RingBufferQueue.o: RingBufferQueue/RingBufferQueue.cpp.o
-.PHONY : RingBufferQueue/RingBufferQueue.o
+RingBufferQueue/RingBufferQueue.obj: RingBufferQueue/RingBufferQueue.cpp.obj
+.PHONY : RingBufferQueue/RingBufferQueue.obj
 
 # target to build an object file
-RingBufferQueue/RingBufferQueue.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o
-.PHONY : RingBufferQueue/RingBufferQueue.cpp.o
+RingBufferQueue/RingBufferQueue.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.obj
+.PHONY : RingBufferQueue/RingBufferQueue.cpp.obj
 
 RingBufferQueue/RingBufferQueue.i: RingBufferQueue/RingBufferQueue.cpp.i
 .PHONY : RingBufferQueue/RingBufferQueue.i
@@ -201,13 +201,13 @@ RingBufferQueue/RingBufferQueue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.s
 .PHONY : RingBufferQueue/RingBufferQueue.cpp.s
 
-YoloProcessor/YoloProcessor.o: YoloProcessor/YoloProcessor.cpp.o
-.PHONY : YoloProcessor/YoloProcessor.o
+YoloProcessor/YoloProcessor.obj: YoloProcessor/YoloProcessor.cpp.obj
+.PHONY : YoloProcessor/YoloProcessor.obj
 
 # target to build an object file
-YoloProcessor/YoloProcessor.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o
-.PHONY : YoloProcessor/YoloProcessor.cpp.o
+YoloProcessor/YoloProcessor.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneDetection.dir/build.make CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.obj
+.PHONY : YoloProcessor/YoloProcessor.cpp.obj
 
 YoloProcessor/YoloProcessor.i: YoloProcessor/YoloProcessor.cpp.i
 .PHONY : YoloProcessor/YoloProcessor.i
@@ -234,16 +234,16 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DroneDetection"
-	@echo "... CameraProducer/CameraProducer.o"
+	@echo "... CameraProducer/CameraProducer.obj"
 	@echo "... CameraProducer/CameraProducer.i"
 	@echo "... CameraProducer/CameraProducer.s"
-	@echo "... Main.o"
+	@echo "... Main.obj"
 	@echo "... Main.i"
 	@echo "... Main.s"
-	@echo "... RingBufferQueue/RingBufferQueue.o"
+	@echo "... RingBufferQueue/RingBufferQueue.obj"
 	@echo "... RingBufferQueue/RingBufferQueue.i"
 	@echo "... RingBufferQueue/RingBufferQueue.s"
-	@echo "... YoloProcessor/YoloProcessor.o"
+	@echo "... YoloProcessor/YoloProcessor.obj"
 	@echo "... YoloProcessor/YoloProcessor.i"
 	@echo "... YoloProcessor/YoloProcessor.s"
 .PHONY : help

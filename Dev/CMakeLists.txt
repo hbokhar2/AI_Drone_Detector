@@ -9,7 +9,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/../Build")
 
 add_executable(${PROJECT_NAME} 
 	Main.cpp
-	CameraConsumer/CameraConsumer.cpp
 	CameraProducer/CameraProducer.cpp
 	RingBufferQueue/RingBufferQueue.cpp
 	YoloProcessor/YoloProcessor.cpp

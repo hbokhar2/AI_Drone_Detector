@@ -86,24 +86,10 @@ CMakeFiles/DroneDetection.dir/Main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DroneDetection.dir/Main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/Main.cpp -o CMakeFiles/DroneDetection.dir/Main.cpp.s
 
-CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o: CMakeFiles/DroneDetection.dir/flags.make
-CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o: /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraConsumer/CameraConsumer.cpp
-CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o: CMakeFiles/DroneDetection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o -MF CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o.d -o CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraConsumer/CameraConsumer.cpp
-
-CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraConsumer/CameraConsumer.cpp > CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.i
-
-CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraConsumer/CameraConsumer.cpp -o CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.s
-
 CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o: CMakeFiles/DroneDetection.dir/flags.make
 CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o: /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraProducer/CameraProducer.cpp
 CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o: CMakeFiles/DroneDetection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o -MF CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o.d -o CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/CameraProducer/CameraProducer.cpp
 
 CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.i: cmake_force
@@ -117,7 +103,7 @@ CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.s: cmake_force
 CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o: CMakeFiles/DroneDetection.dir/flags.make
 CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o: /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/RingBufferQueue/RingBufferQueue.cpp
 CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o: CMakeFiles/DroneDetection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o -MF CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o.d -o CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/RingBufferQueue/RingBufferQueue.cpp
 
 CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.i: cmake_force
@@ -131,7 +117,7 @@ CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.s: cmake_force
 CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o: CMakeFiles/DroneDetection.dir/flags.make
 CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o: /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/YoloProcessor/YoloProcessor.cpp
 CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o: CMakeFiles/DroneDetection.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o -MF CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o.d -o CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o -c /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/YoloProcessor/YoloProcessor.cpp
 
 CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.i: cmake_force
@@ -145,7 +131,6 @@ CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.s: cmake_force
 # Object files for target DroneDetection
 DroneDetection_OBJECTS = \
 "CMakeFiles/DroneDetection.dir/Main.cpp.o" \
-"CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o" \
 "CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o" \
 "CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o" \
 "CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o"
@@ -154,7 +139,6 @@ DroneDetection_OBJECTS = \
 DroneDetection_EXTERNAL_OBJECTS =
 
 DroneDetection: CMakeFiles/DroneDetection.dir/Main.cpp.o
-DroneDetection: CMakeFiles/DroneDetection.dir/CameraConsumer/CameraConsumer.cpp.o
 DroneDetection: CMakeFiles/DroneDetection.dir/CameraProducer/CameraProducer.cpp.o
 DroneDetection: CMakeFiles/DroneDetection.dir/RingBufferQueue/RingBufferQueue.cpp.o
 DroneDetection: CMakeFiles/DroneDetection.dir/YoloProcessor/YoloProcessor.cpp.o
@@ -176,7 +160,7 @@ DroneDetection: /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Lib
 DroneDetection: /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/lib/libopencv_video.so
 DroneDetection: /home/B0LD/Documents/Projects/Capstone/DroneDetection/Dev/../Libs/opencv/install/lib/libopencv_videoio.so
 DroneDetection: CMakeFiles/DroneDetection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable DroneDetection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/B0LD/Documents/Projects/Capstone/DroneDetection/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable DroneDetection"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DroneDetection.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
